@@ -5,9 +5,12 @@
     font-family: 'Poppins', sans-serif;
 
     box-sizing: border-box;
+
 }
 
-
+body {
+    background-image: linear-gradient(to right, rgb(226, 158, 255), rgb(178, 78, 240));
+}
 
 h1 {
     margin: 40px 0px 0px 40px;
