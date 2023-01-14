@@ -5,12 +5,49 @@
     box-sizing: border-box;
 }
 
-body {
-    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.99), rgb(253, 40, 40)); */
-    background-color: rgb(215, 186, 186);
+.navbar {
+    background-color: black;
 }
 
-h1 {
+ul.navbar-nav {
+    padding: 0;
+}
+
+nav ul {
+    background-color: black;
+    /* margin: 1rem; */
+    padding: 0 10rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% 25%; */
+}
+
+nav ul li {
+    /* border: 1px solid green; */
+    padding: 1.2rem 2.5rem;
+    text-align: center;
+    list-style: none;
+    /* display: flex;   
+    justify-content: center;
+    align-items: center; */
+}
+
+nav ul li:hover {
+    background-color: rgba(83, 72, 72, 0.5);
+}
+
+body {
+    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.99), rgb(253, 40, 40)); */
+    /* background-color: rgb(215, 186, 186); */
+    background-color: rgb(255, 238, 238);
+}
+
+
+/* h1 {
     margin: 40px 0px 0px 40px;
 }
 
@@ -20,12 +57,65 @@ h2 {
 
 h3 {
     margin: 40px 0px 30px 30px;
+} */
+
+div.text>h1,
+div.text>h2,
+div.text>h3,
+div.text>p {
+    margin: 0;
+    padding: 0;
 }
 
-.header-photo {
-    object-fit: cover;
-    height: 35vw;
+#banner {
+    position: relative;
+    height: 50vw;
+    /* width: 100%; */
+    background: url("/images/introductory.jpg") no-repeat scroll;
+    background-size: cover;
+    z-index: 1;
+}
+
+#banner .container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: 50vw;
+}
+
+#banner .container .text {
+    position: static;
+    text-align: right;
+    padding-top: 58%;
+    padding-left: 13vw;
+}
+
+#banner .container .text h1 {
+    display: inline;
+    color: white;
+    background-color: rgba(247, 55, 55, 0.803);
+    font-size: 4vw;
+    padding: 5px 5px;
+    box-shadow: 11px 11px 3px rgba(0, 0, 0, 0.5);
+}
+
+#banner .container .text p {
+    padding-top: 5%;
+    text-align: right;
+}
+
+#banner .container .image {
+    /* padding-top: 22.5px; */
+}
+
+#banner:after {
+    position: absolute;
+    content: '';
+    background-image: -webkit-linear-gradient(top, rgba(155, 155, 155, 0.071), rgba(255, 255, 255, 0.201)), url("images/overlay.png");
+    top: 0;
+    left: 0;
+    height: 50vw;
     width: 100%;
+    z-index: -1;
 }
 
 .inBody {
@@ -39,6 +129,10 @@ h3 {
 
 .inBody:visited {
     color: black;
+}
+
+.container-fluid {
+    width: 100%;
 }
 
 .navlink {
@@ -66,29 +160,6 @@ p {
     padding: 1rem;
 }
 
-nav ul {
-    background-color: black;
-    /* margin: 1rem; */
-    padding: 0 10rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    /* 
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%; */
-}
-
-nav ul li {
-    /* border: 1px solid green; */
-    padding: 1.2rem 2.5rem;
-    text-align: center;
-    list-style: none;
-    /* display: flex;   
-    justify-content: center;
-    align-items: center; */
-}
-
-nav ul li:hover {
+p.navbar-toggler:hover {
     background-color: rgba(83, 72, 72, 0.5);
 }
