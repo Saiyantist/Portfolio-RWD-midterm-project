@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+
+/* Navigation Bar
+
+    BOOTSTRAP
+    
+*/
+
 .navbar {
     background-color: black;
 }
@@ -40,24 +47,52 @@ nav ul li:hover {
     background-color: rgba(83, 72, 72, 0.5);
 }
 
+.navlink {
+    color: white;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+    /* color: red;
+    text-decoration-color: red; */
+}
+
+.navlink:visited {
+    color: white;
+}
+
+
+/* BOOTSTRAP */
+
+.container-fluid {
+    width: 100%;
+}
+
+.img-fluid {
+    max-height: 100%;
+}
+
+
+/* General */
+
 body {
     /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.99), rgb(253, 40, 40)); */
     /* background-color: rgb(215, 186, 186); */
-    background-color: rgb(255, 238, 238);
+    /* background-color: rgb(255, 238, 238); */
+    /* background-color: rgb(241, 105, 105); */
+    /* background-color: rgb(4, 34, 86); */
+    background-color: rgb(16, 26, 40);
 }
 
-
-/* h1 {
-    margin: 40px 0px 0px 40px;
+p {
+    margin: 1rem;
+    padding: 1rem;
 }
 
-h2 {
-    margin: 40px 0px 0px 65px;
+p.navbar-toggler:hover {
+    background-color: rgba(83, 72, 72, 0.5);
 }
-
-h3 {
-    margin: 40px 0px 30px 30px;
-} */
 
 div.text>h1,
 div.text>h2,
@@ -66,6 +101,19 @@ div.text>p {
     margin: 0;
     padding: 0;
 }
+
+.images img {
+    max-width: none;
+    height: auto;
+}
+
+.dates {
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+
+/* Introduction UPPER */
 
 #banner {
     position: relative;
@@ -83,31 +131,74 @@ div.text>p {
 }
 
 #banner .container .text {
-    position: static;
     text-align: right;
-    padding-top: 58%;
+    padding-top: 60%;
     padding-left: 13vw;
 }
 
 #banner .container .text h1 {
     display: inline;
     color: white;
-    background-color: rgba(247, 55, 55, 0.803);
+    background-color: rgba(247, 55, 55, 0.82);
     font-size: 4vw;
     padding: 5px 5px;
     box-shadow: 11px 11px 3px rgba(0, 0, 0, 0.5);
 }
 
+#banner .container .text span {
+    font-weight: bold;
+}
+
 #banner .container .text p {
     padding-top: 5%;
     text-align: right;
+    font-size: 2vw;
 }
 
-#banner .container .image {
-    /* padding-top: 22.5px; */
+
+/* Introduction LOWER */
+
+#banner2 {
+    position: relative;
+    height: 50vw;
+    /* width: 100%; */
+    background: url("/images/introductory2.jpg") no-repeat scroll;
+    background-size: cover;
+    z-index: 1;
 }
 
-#banner:after {
+#banner2 .container {
+    position: static;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 50vw;
+}
+
+#banner2 .container .images {
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    /* 
+    
+    image sht master mastersky
+    
+    */
+}
+
+#banner2 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* #banner2 .image {} */
+
+
+/* OPACITY */
+
+
+/* #banner:after {
     position: absolute;
     content: '';
     background-image: -webkit-linear-gradient(top, rgba(155, 155, 155, 0.071), rgba(255, 255, 255, 0.201)), url("images/overlay.png");
@@ -116,7 +207,7 @@ div.text>p {
     height: 50vw;
     width: 100%;
     z-index: -1;
-}
+} */
 
 .inBody {
     text-decoration: none;
@@ -129,37 +220,4 @@ div.text>p {
 
 .inBody:visited {
     color: black;
-}
-
-.container-fluid {
-    width: 100%;
-}
-
-.navlink {
-    color: white;
-    text-decoration: none;
-}
-
-.navlink:hover {
-    text-decoration: underline;
-    /* color: red;
-    text-decoration-color: red; */
-}
-
-.navlink:visited {
-    color: white;
-}
-
-.dates {
-    margin-left: 3rem;
-    padding: 1rem;
-}
-
-p {
-    margin: 1rem;
-    padding: 1rem;
-}
-
-p.navbar-toggler:hover {
-    background-color: rgba(83, 72, 72, 0.5);
 }
