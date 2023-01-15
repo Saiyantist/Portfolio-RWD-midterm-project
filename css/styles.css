@@ -178,6 +178,7 @@ nav ul li:hover {
 
 .navlink:hover {
     text-decoration: underline;
+    color: white;
     /* color: red;
     text-decoration-color: red; */
 }
