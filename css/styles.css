@@ -168,7 +168,21 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: rgba(83, 72, 72, 0.5);
+    /* background-color: rgba(83, 72, 72, 0.5); */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+#current-li {
+    background-color: rgba(247, 55, 55, 0.803);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#current {
+    pointer-events: none;
+    color: white;
+    text-decoration: none !important;
 }
 
 .navlink {
@@ -178,9 +192,8 @@ nav ul li:hover {
 
 .navlink:hover {
     text-decoration: underline;
-    color: white;
-    /* color: red;
-    text-decoration-color: red; */
+    font-weight: 900;
+    color: rgba(247, 55, 55, 1) !important;
 }
 
 .navlink:visited {
