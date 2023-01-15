@@ -12,15 +12,27 @@
     
 */
 
-@media (min-width: 200px) and (max-width: 481px) {
+@media (min-width: 200px) and (max-width: 480px) {
     nav .sticky-top {
         top: 0;
         z-index: 1020;
     }
     .navbar-toggler {
         font-size: 5vw !important;
-        margin: 1vw;
-        margin: auto;
+        margin: 1vw 0;
+        margin-left: 85%;
+    }
+    .navbar {
+        padding: 2vw 0 !important;
+    }
+    nav ul li {
+        padding: 0.8vw 0 !important;
+    }
+    nav a {
+        font-size: 4vw !important;
+    }
+    #current {
+        font-size: 5vw !important;
     }
     .btn {
         margin: 0 1.3vw;
@@ -44,21 +56,15 @@
     }
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
-    .navbar {
-        padding: 2vw 0 !important;
-    }
-    nav ul li {
-        padding: 0 1.5vw !important;
-    }
-}
-
 @media (min-width: 481px) and (max-width: 768px) {
     nav ul li {
         padding: 1vw 1.5vw !important;
     }
     nav a {
         font-size: 2vw !important;
+    }
+    #current {
+        font-size: 2.7vw !important;
     }
 }
 
@@ -99,7 +105,10 @@
         padding: 0.75vw 1.5vw !important;
     }
     nav a {
-        font-size: 1.3vw !important;
+        font-size: 1.5vw !important;
+    }
+    #current {
+        font-size: 2.2vw !important;
     }
     .btn {
         margin: 0 1vw;
@@ -120,7 +129,10 @@
         font-size: 1vw !important;
     }
     nav a {
-        font-size: 1vw !important;
+        font-size: 1.2vw !important;
+    }
+    #current {
+        font-size: 1.9vw !important;
     }
 }
 
