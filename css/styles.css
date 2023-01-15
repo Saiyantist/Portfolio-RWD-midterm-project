@@ -12,12 +12,128 @@
     
 */
 
+@media (min-width: 200px) and (max-width: 481px) {
+    nav .sticky-top {
+        top: 0;
+        z-index: 1020;
+    }
+    .navbar-toggler {
+        font-size: 5vw !important;
+        margin: 1vw;
+        margin: auto;
+    }
+    .btn {
+        margin: 0 1.3vw;
+        font-size: 3.5vw;
+    }
+    #info3 h1,
+    #info2 h2,
+    #info2 p,
+    #info1 p,
+    #info1 h2 {
+        margin-bottom: 0 !important;
+    }
+    #info1 p {
+        margin-left: 28vw !important;
+    }
+    #info2 p {
+        font-size: 1.7vw !important;
+    }
+    .text p {
+        font-size: 2.2vw !important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .navbar {
+        padding: 2vw 0 !important;
+    }
+    nav ul li {
+        padding: 0 1.5vw !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul li {
+        padding: 1vw 1.5vw !important;
+    }
+    nav a {
+        font-size: 2vw !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1020px) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn {
+        margin: 0 1vw;
+        font-size: 2.7vw;
+    }
+    #info3 h1,
+    #info2 h2,
+    #info2 p,
+    #info1 p,
+    #info1 h2 {
+        margin-bottom: 2vw !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn {
+        margin: 0 1.3vw;
+        font-size: 2vw;
+    }
+    nav ul li {
+        padding: 0.75vw 1.5vw !important;
+    }
+    nav a {
+        font-size: 1.3vw !important;
+    }
+    .btn {
+        margin: 0 1vw;
+        font-size: 2.7vw;
+    }
+    .btn:first-child {
+        padding: 0.375rem .9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .btn {
+        margin: 0 2vw;
+        font-size: 1.7vw;
+    }
+    nav ul li {
+        padding: 1vw 1.5vw !important;
+        font-size: 1vw !important;
+    }
+    nav a {
+        font-size: 1vw !important;
+    }
+}
+
 .navbar {
     background-color: black;
 }
 
 ul.navbar-nav {
     padding: 0;
+}
+
+nav a {
+    font-size: 1.5vw;
 }
 
 nav ul {
@@ -34,13 +150,9 @@ nav ul {
 }
 
 nav ul li {
-    /* border: 1px solid green; */
-    padding: 1.2rem 2.5rem;
+    padding: 3vw 3vw;
     text-align: center;
     list-style: none;
-    /* display: flex;   
-    justify-content: center;
-    align-items: center; */
 }
 
 nav ul li:hover {
@@ -118,10 +230,10 @@ div.text>p {
 #banner {
     position: relative;
     height: 50vw;
-    /* width: 100%; */
     background: url("/images/introductory.jpg") no-repeat scroll;
     background-size: cover;
     z-index: 1;
+    padding-bottom: 10vw;
 }
 
 #banner .container {
@@ -130,29 +242,37 @@ div.text>p {
     height: 50vw;
 }
 
-#banner .container .text {
+#banner .text {
     text-align: right;
-    padding-top: 60%;
+    padding-top: 33vw;
     padding-left: 13vw;
 }
 
-#banner .container .text h1 {
-    display: inline;
+#banner .text h1 {
+    display: inline-block;
     color: white;
     background-color: rgba(247, 55, 55, 0.82);
     font-size: 4vw;
-    padding: 5px 5px;
-    box-shadow: 11px 11px 3px rgba(0, 0, 0, 0.5);
+    padding: .5vw .5vw;
+    box-shadow: 1vw 1vw 2.5px rgba(0, 0, 0, 0.7);
 }
 
-#banner .container .text span {
+#banner .text span {
     font-weight: bold;
 }
 
-#banner .container .text p {
-    padding-top: 5%;
-    text-align: right;
+#banner .text p {
+    display: inline-block;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    border-radius: 5px;
     font-size: 2vw;
+    text-align: right;
+    background-color: rgba(134, 134, 134, 0.27);
+}
+
+#banner .images img {
+    width: 35.8vw;
 }
 
 
@@ -161,53 +281,91 @@ div.text>p {
 #banner2 {
     position: relative;
     height: 50vw;
-    /* width: 100%; */
     background: url("/images/introductory2.jpg") no-repeat scroll;
     background-size: cover;
     z-index: 1;
 }
 
 #banner2 .container {
-    position: static;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 55% 45%;
     height: 50vw;
 }
 
-#banner2 .container .images {
-    height: 100%;
-    max-width: 100%;
-    margin: auto;
-    /* 
-    
-    image sht master mastersky
-    
-    */
+#banner2 .images img {
+    /* width: 26.5vw; */
+    width: 28.15vw;
 }
 
 #banner2 .text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: right !important;
+    padding-top: 4vw;
+    /* padding-left: 13vw; */
 }
 
+#banner2 .text h1 {
+    display: inline-block;
+    color: white;
+    background-color: rgba(247, 55, 55, 0.82);
+    font-size: 4vw;
+    padding: .5vw .5vw;
+    box-shadow: -1vw 1vw 2.5px rgba(0, 0, 0, 0.7);
+    /* @media screen and (max-width: 768px) {
+        box-shadow: -2px 2px 2.5px rgba(0, 0, 0, 0.7);
+    } */
+}
 
-/* #banner2 .image {} */
+#banner2 .text h2 {
+    display: inline-block;
+    color: white;
+    background-color: rgba(247, 55, 55, 0.82);
+    font-size: 3vw;
+    padding: .5vw .5vw;
+    box-shadow: -1vw 1vw 2.5px rgba(0, 0, 0, 0.7);
+    /* @media screen and (max-width: 768px) {
+        box-shadow: -2px 2px 2.5px rgba(0, 0, 0, 0.7);
+    } */
+}
 
+#banner2 .text span {
+    font-weight: bold;
+}
 
-/* OPACITY */
+#banner2 .text p {
+    margin: 0.5vw 0 2vw 29vw;
+    padding: 1vw 2vw;
+    border-radius: 15px;
+    font-size: 1.2vw;
+    text-align: left;
+    background-color: rgba(134, 134, 134, 0.27);
+}
 
+#info3 h1 {
+    margin: 0.5vw 0 6vw 0;
+    font-weight: bold;
+    font-size: 5vw !important;
+    text-align: left;
+    background-color: rgba(253, 173, 167, 0.835) !important;
+    color: rgb(0, 0, 0) !important;
+}
 
-/* #banner:after {
+#info2 p {
+    margin: 0.5vw 0 2vw 20vw !important;
+}
+
+#banner2:after {
     position: absolute;
     content: '';
-    background-image: -webkit-linear-gradient(top, rgba(155, 155, 155, 0.071), rgba(255, 255, 255, 0.201)), url("images/overlay.png");
+    background-image: -webkit-radial-gradient(rgba(78, 78, 78, 0.112), rgba(171, 26, 26, 0.202), rgba(52, 51, 51, 0.157)), url("images/overlay.png");
+    /* background-image: -webkit-linear-gradient(top, rgba(77, 77, 77, 0.071),rgba(255, 255, 255, 0.201)), url("images/overlay.png"); */
     top: 0;
     left: 0;
     height: 50vw;
     width: 100%;
     z-index: -1;
-} */
+}
 
 .inBody {
     text-decoration: none;
@@ -220,4 +378,8 @@ div.text>p {
 
 .inBody:visited {
     color: black;
+}
+
+footer {
+    z-index: 1;
 }
