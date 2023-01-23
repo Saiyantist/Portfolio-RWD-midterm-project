@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     color: white;
+    transition: 0.3s ease;
 }
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -211,14 +212,14 @@ nav ul li:hover {
     text-decoration: none;
 }
 
-.navlink:hover {
-    text-decoration: underline;
-    font-weight: 900;
-    color: rgba(247, 55, 55, 1) !important;
-}
-
 .navlink:visited {
     color: white;
+}
+
+.navlink:hover {
+    font-size: 2vw !important;
+    font-weight: 900;
+    color: rgba(247, 55, 55, 1) !important;
 }
 
 
@@ -428,26 +429,141 @@ E D U C A T I O N
 
 #educ-page-header {
     display: inline;
+    position: relative;
     object-fit: cover;
     width: 100%;
-    height: 35vh;
+    height: 15vw;
+    padding-bottom: 1%;
 }
 
-.inBody {
-    text-decoration: none;
-    color: black;
+#educ.container-fluid {
+    width: 97%;
 }
 
-.inBody:hover {
-    text-decoration: underline;
+section>h2 {
+    /* display: none; */
+    padding: 2vw;
+    background-color: rgba(247, 55, 55, 0.82);
+    border-radius: var();
 }
 
-.inBody:visited {
+#school-link {
     color: white;
+    text-decoration: none;
 }
 
-#educ-section1 {}
+#school-link:hover {
+    color: black;
+    font-size: 2.5vw;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
 
-#educ-section1 {}
+section>.row {
+    padding: 1% 0;
+}
 
-#educ-section1 {}
+.row p {
+    margin: 0;
+    padding: 3%;
+}
+
+#row-text,
+#row-img,
+#row-img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#row-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+
+#row-img2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 
+ E D U C A T I O N 
+
+C A R O U S E L L # 1
+
+*/
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    margin: 0 3.4%;
+    margin-top: -4vw;
+    padding: 2vw;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 3vw;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    border-radius: 15px 0 0 15px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+#educ-section1 .lv-carousel {
+    box-sizing: border-box;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    padding-bottom: 1vh;
+}
+
+#educ-section1 .lv-carousel img {
+    object-fit: cover;
+    width: 80%;
+    height: 40vw;
+}
+
+#educ-section1 .lv-carousel .lv-slides {
+    display: none;
+    text-align: center;
+}
+
+
+/* 
+ E D U C A T I O N 
+
+C A R O U S E L L # 2
+
+*/
+
+#educ-section2 button {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#educ-section2 .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vw;
+}
