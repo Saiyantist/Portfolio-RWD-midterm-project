@@ -452,6 +452,11 @@ E D U C A T I O N
     width: 97%;
 }
 
+section p {
+    color: #000000;
+    background-color: rgba(213, 213, 213, 0.8);
+}
+
 section>h2 {
     /* display: none; */
     font-size: light;
@@ -484,7 +489,9 @@ section>.row {
 
 #row-text,
 #row-img,
-#row-img2 {
+#row-img2,
+#jrca-row-img,
+#jrca-row-text {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -503,7 +510,8 @@ section>.row {
     height: 100%;
 }
 
-#row-text>h3 {
+#row-text>h3,
+#jrca-row-text>h3 {
     font-weight: bold;
     padding: 2% 12%;
     border-radius: 5px;
@@ -566,12 +574,39 @@ section>.row {
     box-shadow: 15px 15px 50px 10px #000000;
 }
 
+#educ-section2 .row {
+    position: relative;
+    background: url("/images/education/stem.png") no-repeat scroll;
+    background-size: 100%;
+    z-index: 1;
+    max-width: 100%;
+    filter: brightness(200%);
+}
 
-/* @media (min-width: 200px) and (max-width: 768px) {
-    .programming-languages {
-        padding: 4vw;
-    }
-} */
+#jrca-row-img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    opacity: 0.05;
+    filter: brightness(50%)
+}
+
+#jrca-row-img img:hover {
+    z-index: 15;
+    opacity: 1;
+    filter: brightness(50%);
+}
+
+#jrca-row-text h3 {
+    padding: 4% 12%;
+    filter: brightness(50%);
+    background-color: rgba(82, 82, 82, 0.9);
+}
+
+#jrca-row-text p {
+    padding: 4% 12%;
+    filter: brightness(50%);
+}
 
 
 /* 
