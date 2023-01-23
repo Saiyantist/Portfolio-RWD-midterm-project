@@ -536,9 +536,8 @@ section>.row {
 }
 
 .programming-languages {
-    /* display: flex;
-    align-items: center; */
-    padding: 1vw;
+    margin-top: 5%;
+    padding: 2%;
     width: 100%;
     background-color: rgba(134, 134, 134, 0.1);
     border-radius: 100px;
@@ -606,6 +605,13 @@ section>.row {
 #jrca-row-text p {
     padding: 4% 12%;
     filter: brightness(50%);
+}
+
+#educ-section3 img {
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+    margin: auto;
 }
 
 
