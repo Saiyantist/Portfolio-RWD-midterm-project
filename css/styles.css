@@ -651,7 +651,7 @@ section>.row {
 }
 
 .border-radius,
-.carousel-inner img {
+#gelo-carousel .carousel-inner img {
     border-radius: 50px;
 }
 
