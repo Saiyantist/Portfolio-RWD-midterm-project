@@ -51,6 +51,39 @@
     }
 }
 
+@media (min-width: 200px) and (max-width: 768px) {
+    #me-pics-height {
+        width: 60%;
+    }
+    #row-img {
+        object-fit: cover !important;
+        width: 60%;
+        margin: auto !important;
+        padding-top: 4%;
+    }
+    #reverse-me {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #jrca-row-img img {
+        object-fit: cover;
+        width: 60% !important;
+        margin: 2%;
+        opacity: 1 !important;
+    }
+    #jrca-row-text:hover {
+        opacity: 0.01 !important;
+    }
+    #jrca-row-text p,
+    #jrca-row-text h3 {
+        padding: 2% !important;
+        margin: 1%;
+    }
+    #educ-section2 .row {
+        background-position: 0% 100% !important;
+    }
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
     nav ul li {
         padding: 1vw 1.5vw !important;
@@ -482,7 +515,7 @@ section>.row {
 }
 
 .row p {
-    margin: 0;
+    margin: 2%;
     padding: 3%;
     text-align: justify;
 }
@@ -532,14 +565,14 @@ section>.row {
 #me-pics-height {
     height: 100%;
     margin: auto;
-    padding: 1%;
+    padding: 5%;
 }
 
 .programming-languages {
     margin-top: 5%;
     padding: 2%;
     width: 100%;
-    background-color: rgba(134, 134, 134, 0.1);
+    background-color: rgba(134, 134, 134, 0.27);
     border-radius: 100px;
     text-align: justify
 }
@@ -558,7 +591,8 @@ section>.row {
     padding: 1vw;
     width: 25%;
     height: auto;
-    background-color: rgba(134, 134, 134, 0.1);
+    /* background-color: rgba(134, 134, 134, 0.1); */
+    background-color: rgba(234, 206, 204, 0.887);
     border-radius: 50px;
 }
 
@@ -587,7 +621,7 @@ section>.row {
     width: 100%;
     height: auto;
     opacity: 0.05;
-    filter: brightness(50%)
+    filter: brightness(50%);
 }
 
 #jrca-row-img img:hover {
@@ -612,6 +646,18 @@ section>.row {
     width: 40%;
     height: auto;
     margin: auto;
+    padding: 0;
+    ;
+}
+
+.border-radius,
+.carousel-inner img {
+    border-radius: 50px;
+}
+
+.border-radius:hover {
+    transform: scale(1.05);
+    box-shadow: 18px 11px 1px 3px #00000094;
 }
 
 
@@ -692,4 +738,9 @@ C A R O U S E L L # 2
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+
+#jrca-carousel {
+    width: 75%;
+    margin: auto;
 }
