@@ -603,8 +603,9 @@ section>.row {
 }
 
 .programming-languages img:hover {
+    transform: scale(1.05);
     background-color: rgba(134, 134, 134, 0.5);
-    box-shadow: 15px 15px 50px 10px #000000;
+    box-shadow: 7px 7px 5px 4px #000000d6;
 }
 
 #educ-section2 .row {
