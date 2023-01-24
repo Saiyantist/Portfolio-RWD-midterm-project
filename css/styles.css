@@ -765,6 +765,20 @@ C A R O U S E L L
     padding: 4%;
 }
 
+.row-video video {
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: 1s 1s;
+}
+
+.row-video video:active,
+.row-video video:hover {
+    transform: scale(1.05);
+    transition: 0s;
+    opacity: 1;
+    box-shadow: 1.2vw 1.2vw 5px 0.2vw #000000a9;
+}
+
 .download-links {
     display: flex;
     flex-direction: row;
@@ -789,7 +803,7 @@ C A R O U S E L L
 .download-links img:hover {
     transform: scale(1.05);
     background-color: rgba(134, 134, 134, 0.5);
-    box-shadow: 7px 7px 5px 4px #000000d6;
+    box-shadow: 0.7vw 0.7vw 5px 0.2vw #0000007d;
 }
 
 .dl-link {
@@ -802,6 +816,7 @@ C A R O U S E L L
     margin: auto;
     margin-left: 0;
     padding: 0;
+    padding-left: 2%;
     color: white;
     background-color: unset !important;
 }
