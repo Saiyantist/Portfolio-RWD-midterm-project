@@ -659,7 +659,9 @@ section>.row {
 }
 
 .border-radius,
-#gelo-carousel .carousel-inner img {
+#gelo-carousel .carousel-inner img,
+#bike-carousel .carousel-inner img,
+#portrait-carousel .carousel-inner img {
     border-radius: 50px;
 }
 
@@ -819,4 +821,88 @@ C A R O U S E L L
     padding-left: 2%;
     color: white;
     background-color: unset !important;
+}
+
+
+/* 
+
+    H O B B I E S
+
+*/
+
+
+/* section>.row-img img {
+    object-fit: cover;
+    width: 100%;
+} */
+
+#content1 {
+    height: 100%;
+    margin: auto;
+    padding: 3%;
+}
+
+#hobbies .row #row-text {
+    padding: 4%;
+}
+
+#bike-carousel .carousel-item img {
+    border-radius: 0;
+    margin: auto;
+    width: 75%;
+}
+
+#my-bike-gallery,
+#bike-friends-gallery {
+    margin: 2%;
+    padding: 3%;
+    background-color: rgba(134, 134, 134, 0.27);
+}
+
+#my-bike-gallery img,
+#bike-friends-gallery img {
+    border-radius: 10px;
+    border: 5px solid rgb(227, 227, 227);
+    margin: 2%;
+}
+
+#my-bike-gallery img:hover,
+#paliitin:hover {
+    transform: scale(1.05);
+    box-shadow: 18px 11px 1px 3px #00000094;
+}
+
+#hobbies h3 {
+    background-color: rgba(247, 55, 55, 0.82);
+    margin-bottom: 3%;
+}
+
+#hobbies #my-bike-gallery #row-text,
+#hobbies #bike-friends-gallery #row-text {
+    padding: 0;
+}
+
+#friends-carousel .carousel-item img,
+#friends-carousel2 .carousel-item img {
+    object-fit: cover;
+    margin: auto;
+    width: 95%;
+    height: 25vw;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    #friends-carousel .carousel-item img,
+    #friends-carousel2 .carousel-item img {
+        width: 100%;
+        height: 50vw;
+    }
+}
+
+#bike-friends-gallery #friends-carousel,
+#bike-friends-gallery #friends-carousel2 {
+    padding: 3%;
+}
+
+#paliitin {
+    width: 40%;
 }
