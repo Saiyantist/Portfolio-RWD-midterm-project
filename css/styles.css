@@ -82,6 +82,9 @@
     #educ-section2 .row {
         background-position: 0% 100% !important;
     }
+    #jrca-carousel {
+        width: 95% !important;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -742,6 +745,6 @@ C A R O U S E L L # 2
 }
 
 #jrca-carousel {
-    width: 75%;
+    width: 85%;
     margin: auto;
 }
