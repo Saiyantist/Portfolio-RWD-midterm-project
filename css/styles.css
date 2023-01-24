@@ -82,7 +82,7 @@
     #educ-section2 .row {
         background-position: 0% 100% !important;
     }
-    #jrca-carousel {
+    #default-carousel {
         width: 95% !important;
     }
 }
@@ -475,7 +475,7 @@ E D U C A T I O N
 
 */
 
-#educ-page-header {
+.header {
     display: inline;
     position: relative;
     object-fit: cover;
@@ -493,8 +493,11 @@ section p {
     background-color: rgba(213, 213, 213, 0.8);
 }
 
+.text p {
+    color: white;
+}
+
 section>h2 {
-    /* display: none; */
     font-size: light;
     padding: 2vw;
     background-color: rgba(247, 55, 55, 0.82);
@@ -527,7 +530,8 @@ section>.row {
 #row-img,
 #row-img2,
 #jrca-row-img,
-#jrca-row-text {
+#jrca-row-text,
+.row-text {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -666,9 +670,10 @@ section>.row {
 
 
 /* 
+
  E D U C A T I O N 
 
-C A R O U S E L L # 1
+C A R O U S E L L
 
 */
 
@@ -726,25 +731,77 @@ C A R O U S E L L # 1
     text-align: center;
 }
 
-
-/* 
- E D U C A T I O N 
-
-C A R O U S E L L # 2
-
-*/
-
-#educ-section2 button {
+.carousel button {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-#educ-section2 .carousel-item img {
+.carousel-item img {
     object-fit: cover;
     width: 100%;
     height: auto;
 }
 
-#jrca-carousel {
+#default-carousel {
     width: 85%;
     margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* P R O J E C T S */
+
+#proj-section1 {
+    height: 100%;
+}
+
+.row-video video {
+    width: 100%;
+    height: auto;
+}
+
+.row-video {
+    margin: auto;
+    padding: 4%;
+}
+
+.download-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.download-links a {
+    display: inline;
+    text-align: right;
+    margin: auto;
+    width: 50%;
+}
+
+.download-links img {
+    margin: 0.5vw;
+    padding: 10%;
+    width: 60%;
+    height: auto;
+    background-color: rgba(134, 134, 134, 0.27);
+    border-radius: 20px;
+}
+
+.download-links img:hover {
+    transform: scale(1.05);
+    background-color: rgba(134, 134, 134, 0.5);
+    box-shadow: 7px 7px 5px 4px #000000d6;
+}
+
+.dl-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.dl-link p {
+    text-align: left;
+    margin: auto;
+    margin-left: 0;
+    padding: 0;
+    color: white;
+    background-color: unset !important;
 }
